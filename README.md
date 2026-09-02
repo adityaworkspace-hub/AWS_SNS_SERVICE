@@ -12,16 +12,16 @@ Services Used
 
 Configuration Details
 Parameter | Configuration
-AWS Region | Europe (Ireland) eu-west-1
+AWS Region | Europe (Ireland) 
 Topic Name | Public_Topic
 Topic Type | Standard Topic
-Topic ARN | arn:aws:sns:eu-west-1:096031499018:Public_Topic
+Topic ARN | arn:aws:..............
 Protocol | Email
-Subscription ID | 9b5f6ac0-45b4-4d78-ad43-f8aea152730b
+Subscription ID | 9b5f6ac0-45b4.......................
 Endpoint Status | Confirmed
 
 Step 1 - Create Amazon SNS Topic
-Created a standard SNS topic named Public_Topic in the eu-west-1 region to act as the centralized message hub for dispatching alerts.
+Created a standard SNS topic named Public_Topic in the eu region to act as the centralized message hub for dispatching alerts.
 
 Step 2 - Configure Subscriber Endpoint
 Created an email subscription pointing to Public_Topic:
@@ -32,7 +32,7 @@ Created an email subscription pointing to Public_Topic:
 Step 3 - Validate Subscription Handshake
 Completed the AWS opt-in verification protocol:
 - Retrieved the automated confirmation email sent by no-reply@sns.amazonaws.com.
-- Clicked the verification link to confirm the subscription ARN 9b5f6ac0-45b4-4d78-ad43-f8aea152730b.
+- Clicked the verification link to confirm the subscription ARN ........................2730b.
 - Verified in the AWS Console that subscription status switched to Confirmed.
 
 Step 4 - Publish Notification Payload
